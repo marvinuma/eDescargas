@@ -30,7 +30,8 @@ section h3{
     height: 25px;
     left: 480px;
     border-bottom: 1px solid #ff851b;
-    position: absolute;
+    position: sticky;
+    /*position: absolute;*/ /*Cambiar para que los inputs se ajusten al tamaño de la ventana*/
     font-size: 14px;
 }
 
