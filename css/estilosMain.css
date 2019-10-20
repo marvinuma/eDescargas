@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css encabezado e-Descargas*/
+header{
+    background-color:#424141;
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 50px;
+    border-bottom: 3px solid #ff851b;
+}
+
+/* section imagen */
+section{
+    background-color: gray;
+    height: 140px;
+    width: 70%;
+    float: left;
+}
+
+img{
+    padding-left: 35%;
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+/* Aside - Bienvenido - Control LoginStatus*/
+.right{
+    background-color: gray;
+    color: white;
+    height: 140px;
+    width: 30%;
+    float: right;
+}
+.right a{
+    color: white;
+}
+
+/* Nav - usted esta en: */
+nav{
+    background-color: #424141;
+    color: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 11px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    border-top: 3px solid #ff851b;
+    border-bottom: 3px solid #ff851b;
+}
+
+/* Aside - Menu Principal*/
+.left{
+    width: 250px;
+    float: left;
+}
+
+ul{
+    padding-bottom: 15px;
+}
+li {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 16px;;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Area de trabajo*/
+main{
+    background: url(../img/mainbg.png);
+    background-repeat: no-repeat;
+    margin-left: 250px;
+}

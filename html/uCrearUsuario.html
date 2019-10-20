@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eDescargas | Crear Cuentas</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/estilosMain.css">
+    <link rel="stylesheet" href="../css/estilosForms.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+            <h1>e-Descargas</h1>
+        </header>
+    
+        <!--imagen-->
+        <section>
+            <img src="../img/image.png">
+        </section>
+    
+        <!--Bienvenido - Control Login Name / Status-->
+        <aside class="right">
+            <div>
+                <h1>Bienvenido:</h1>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </aside>
+    
+        <!--Usted esta en - Control SiteMapPath-->
+        <nav>
+            <ul>
+                <h1>Usted esta en:</h1>
+            </ul>
+        </nav>
+    
+        <!--Main Menu-->
+        <aside class="left">
+            <div>
+                <ol>
+                    <li><h4><a href="../html/main.html">Inicio</a></h4>
+                        <ul>
+                            <li><h4>Seguridad</h4>
+                                <ul>
+                                    <li><h4>Usuarios</h4>
+                                        <ul>
+                                            <li><h4><a href="../html/uCrearUsuario.html">Crear Usuario</a></h4></li>
+                                            <li><h4><a href="../html/uVerUsuarios.html">Ver Usuarios</a></h4></li>
+                                        </ul>
+                                    </li>
+                                    <li><h4><a href="../html/uCambioContrsena.html">Cambiar Contraseña</a></h4></li>
+                                </ul>
+                            </li>
+                            <li><h4>Administración</h4>
+                                <ul>
+                                    <li><h4><a href="../html/aConsecutivo.html">Consecutivos</a></h4></li>
+                                    <li><h4><a href="#">Tarifas</a></h4></li>
+                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                                </ul>
+                            </li>
+                            <li><h4>Consultas</h4>
+                                <ul>
+                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+    
+        <!--Area de trabajo-->
+        <main>
+            <form class="Usuario-frm">
+                <div class="CrearUsuario-frm">
+                    <h2>Usuarios</h2>
+                    <h3>Crear nueva cuenta</h3>
+                        <div class="cu-frm">
+                            <label class="" for="txtUsuario">Usuario:</label>  
+                            <input id="txtUsuario" name="txtUsuario" type="text" placeholder="" class="">
+                        </div>
+                        <div class="cu-frm">
+                            <label class="" for="txtContrasena">Contraseña:</label>  
+                            <input id="txtContrasena" name="txtContrasena" type="text" placeholder="" class="">
+                        </div>
+                        <div class="cu-frm">
+                            <label class="" for="txtConfContrasena">Confirmar Contraseña:</label>  
+                            <input id="txtConfContrasena" name="txtConfContrasena" type="text" placeholder="" class="">
+                        </div>
+                        <div class="cu-frm">
+                            <label class="" for="txtEmail">Email:</label>  
+                            <input id="txtEmail" name="txtEmail" type="email" placeholder="" class="">
+                        </div>
+                        <div class="cu-frm">
+                            <label class="" for="txtPregSeguridad">Pregunta de Seguridad:</label>  
+                            <input id="txtPregSeguridad" name="txtPregSeguridad" type="text" placeholder="" class="">
+                        </div>
+                        <div class="cu-frm">
+                            <label class="" for="txtRespSeguridad">Respuesta de Seguridad:</label>  
+                            <input id="txtRespSeguridad" name="txtRespSeguridad" type="text" placeholder="" class="">
+                        </div>
+
+                        <!-- Button Iniciar Sesión-->
+                        <div class="cu-btn">
+                            <button id="btnCrearUsuario" name="btnCrearUsuario" type="submit">Crear Usuario</button>
+                        </div>
+                </div>
+            </form>
+        </main>
+</body>
+</html>

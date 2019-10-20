@@ -1,0 +1,74 @@
+/* color y margen a la izquierda del area de trabajo*/
+main{
+    background: url(../img/mainbg.png);
+    background-repeat: no-repeat;
+    margin-left: 250px;
+}
+
+main h2{
+    padding-top: 210px;
+    padding-left: 15px;
+    color: #ff851b;
+}
+main h3{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+main .cu-frm{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.Usuario-frm input[type="text"],
+.Usuario-frm input[type="email"]{
+    width: 275px;
+    height: 25px;
+    left: 480px;
+
+    border-bottom: 1px solid #ff851b;
+    position: absolute;
+    font-size: 14px;
+}
+
+.Usuario-frm input[type="text"]:focus,
+.Usuario-frm input[type="email"]:focus{
+    border-bottom: 2px solid #0074d9;
+}
+
+/* Boton Crear Usuario*/
+.Usuario-frm button,
+.VerUsuario-frm button{
+    width: 170px;
+    height: 40px;
+    margin-top: 35px;
+    margin-left: 319px;
+    margin-bottom: 500px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/*Configuracion Fielset - Select Multiple*/
+fieldset{
+    padding-top: 20px;
+    padding-left: 20px;
+    border: none;
+}
+
+select{
+    font-size: 14px;
+    width: 150px;
+}
+
+.ListaUsuarios{
+    float:left;
+}
+.ListaRoles{
+    float:right;
+}
+
+.form-Vertical{
+    vertical-align: baseline;;
+
+}
