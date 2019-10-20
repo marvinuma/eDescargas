@@ -18,16 +18,16 @@ header{
 }
 
 /* section imagen */
-section{
+.imagen{
     background-color: gray;
     height: 140px;
-    width: 70%;
     float: left;
+    width: 70%;
 }
 
 img{
     padding-left: 35%;
-    height: 150px;
+    height: 140px;
     width: auto;
     display: block;
 }
@@ -37,8 +37,8 @@ img{
     background-color: gray;
     color: white;
     height: 140px;
-    width: 30%;
     float: right;
+    width: 30%;
 }
 .right a{
     color: white;
@@ -60,7 +60,7 @@ nav{
 
 /* Aside - Menu Principal*/
 .left{
-    width: 250px;
+    width: 25%;
     float: left;
 }
 
@@ -71,17 +71,17 @@ li {
     list-style: none;
     padding-top: 20px;
     padding-left: 16px;;
-
 }
 
 a{
     color: black;
-    text-decoration: none;
 }
 
 /* Area de trabajo*/
-main{
+.areaTrabajo{
     background: url(../img/mainbg.png);
     background-repeat: no-repeat;
-    margin-left: 250px;
+    float: right;
+    width: 75%;
+    height: 531px;
 }

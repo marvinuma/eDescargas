@@ -1,52 +1,67 @@
 /* color y margen a la izquierda del area de trabajo*/
-main{
+section .areaTrabajo{
     background: url(../img/mainbg.png);
     background-repeat: no-repeat;
-    margin-left: 250px;
 }
 
-main h2{
-    padding-top: 210px;
+section h2{
+    padding-top: 20px;
     padding-left: 15px;
     color: #ff851b;
 }
-main h3{
+section h3{
     padding-top: 20px;
     padding-left: 40px;
     padding-bottom: 10px;
 }
 
-main .cu-frm{
+.cu-frm,
+.cc-frm,
+.ce-frm{
     padding-left: 40px;
     margin-top: 20px;
 }
 
 .Usuario-frm input[type="text"],
-.Usuario-frm input[type="email"]{
+.Usuario-frm input[type="email"],
+.CambioClave-frm input[type="text"],
+.Consecutivos-frm input[type="text"]{
     width: 275px;
     height: 25px;
     left: 480px;
-
     border-bottom: 1px solid #ff851b;
     position: absolute;
     font-size: 14px;
 }
 
 .Usuario-frm input[type="text"]:focus,
-.Usuario-frm input[type="email"]:focus{
-    border-bottom: 2px solid #0074d9;
+.Usuario-frm input[type="email"]:focus,
+.CambioClave-frm input[type="text"]:focus,
+.Consecutivos-frm input[type="text"]:focus{
+    border-bottom: 2px solid #000508;
 }
 
-/* Boton Crear Usuario*/
+/* Boton Crear Usuario | Actualizar Roles | Cambiar Contraseña | Nuevo Consecutivo | Informacion Consecutivo*/
 .Usuario-frm button,
-.VerUsuario-frm button{
+.verUsuario-frm button,
+.CambioClave-frm button,
+.Consecutivos-frm button{
     width: 170px;
     height: 40px;
     margin-top: 35px;
-    margin-left: 319px;
-    margin-bottom: 500px;
     border-radius: 4px;
     font-size: 14px;
+}
+
+.Usuario-frm button{
+    margin-left: 300px;
+}
+.verUsuario-frm button{
+    margin-left: 10px;
+}
+.CambioClave-frm button,
+.Consecutivos-frm button{
+    margin: 15px;
 }
 
 /*Configuracion Fielset - Select Multiple*/
@@ -63,12 +78,42 @@ select{
 
 .ListaUsuarios{
     float:left;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 .ListaRoles{
     float:right;
 }
 
-.form-Vertical{
-    vertical-align: baseline;;
-
+legend{
+    padding-top: 15px;
+    font-weight: bold;
 }
+
+form .verUsuario-frm{
+    vertical-align: baseline;;
+    padding-top: 50px;
+    color: #ff851b;
+}
+
+div .btnActualizarRoles{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Configuracion Informacion de Consecutivo - aConsecutivoEditar*/
+/*Multiple Checkboxes: Posee Prefijo y Posee Rango*/
+/*div .checkboxPosee{
+    left: 600px;
+    position: absolute;
+}*/
+
+
+/*selectProducto: Descripción (Peliculas - Musica - Libros)*/
+/*select{
+    width: 275px;
+    height: 25px;
+    left: 480px;
+    position: absolute;
+    font-size: 14px;
+}*/

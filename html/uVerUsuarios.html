@@ -12,119 +12,121 @@
 <body>
     <!--Encabezado-->
     <header>
-            <h1>e-Descargas</h1>
-        </header>
+        <h1>e-Descargas</h1>
+    </header>
     
-        <!--imagen-->
-        <section>
-            <img src="../img/image.png">
-        </section>
+    <!--imagen-->
+    <section class="imagen">
+        <img src="../img/image.png">
+    </section>
     
-        <!--Bienvenido - Control Login Name / Status-->
-        <aside class="right">
-            <div>
-                <h1>Bienvenido:</h1>
-                <a href="#">Cerrar Sesión</a>
+    <!--Bienvenido - Control Login Name / Status-->
+    <aside class="right">
+        <div>
+            <h1>Bienvenido:</h1>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+    </aside>
+    
+    <!--Usted esta en - Control SiteMapPath-->
+    <nav>
+        <ul>
+            <h1>Usted esta en:</h1>
+        </ul>
+    </nav>
+    
+    <!--Main Menu-->
+    <aside class="left">
+        <div>
+            <ol>
+                <li><h4><a href="../html/main.html">Inicio</a></h4>
+                    <ul>
+                        <li><h4>Seguridad</h4>
+                            <ul>
+                                <li><h4>Usuarios</h4>
+                                    <ul>
+                                        <li><h4><a href="../html/uCrearUsuario.html">Crear Usuario</a></h4></li>
+                                        <li><h4><a href="../html/uVerUsuarios.html">Ver Usuarios</a></h4></li>
+                                    </ul>
+                                </li>
+                                <li><h4><a href="../html/uCambioContrasena.html">Cambiar Contraseña</a></h4></li>
+                            </ul>
+                        </li>
+
+                        <li><h4>Administración</h4>
+                            <ul>
+                                <li><h4><a href="../html/aConsecutivo.html">Consecutivos</a></h4></li>
+                                <li><h4><a href="#">Tarifas</a></h4></li>
+                                <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                            </ul>
+                        </li>
+
+                        <li><h4>Consultas</h4>
+                            <ul>
+                                <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </aside>
+    
+    <!--Area de trabajo-->
+    <section class="areaTrabajo">
+        <form class="verUsuario-frm">
+            <h2>Lista de Usuarios</h2>
+            <div class="ListaUsuarios">
+                <select multiple size="15">
+                    <option value="Users">Marvin Umana</option>
+                    <option value="Users">User Two</option>
+                    <option value="Users">User Three</option>
+                    <option value="Users">User Four</option>
+                    <option value="Users's">User Five</option>
+                    <option value="Users">User Six</option>
+                </select>
             </div>
-        </aside>
-    
-        <!--Usted esta en - Control SiteMapPath-->
-        <nav>
-            <ul>
-                <h1>Usted esta en:</h1>
-            </ul>
-        </nav>
-    
-        <!--Main Menu-->
-        <aside class="left">
-            <div>
-                <ol>
-                    <li><h4><a href="../html/main.html">Inicio</a></h4>
-                        <ul>
-                            <li><h4>Seguridad</h4>
-                                <ul>
-                                    <li><h4>Usuarios</h4>
-                                        <ul>
-                                            <li><h4><a href="../html/uCrearUsuario.html">Crear Usuario</a></h4></li>
-                                            <li><h4><a href="../html/uVerUsuarios.html">Ver Usuarios</a></h4></li>
-                                        </ul>
-                                    </li>
-                                    <li><h4><a href="../html/uCambioContrsena.html">Cambiar Contraseña</a></h4></li>
-                                </ul>
-                            </li>
-                            <li><h4>Administración</h4>
-                                <ul>
-                                    <li><h4><a href="../html/aConsecutivo.html">Consecutivos</a></h4></li>
-                                    <li><h4><a href="#">Tarifas</a></h4></li>
-                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
-                                </ul>
-                            </li>
-                            <li><h4>Consultas</h4>
-                                <ul>
-                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </aside>
-    
-        <!--Area de trabajo-->
-        <main>
-            <form>
-                <h2>Lista de Usuarios</h2>
-                <div class="ListaUsuarios">
-                    <select multiple size="15">
-                        <option value="Users">Marvin Umana</option>
-                        <option value="Users">User Two</option>
-                        <option value="Users">User Three</option>
-                        <option value="Users">User Four</option>
-                        <option value="Users's">User Five</option>
-                        <option value="Users">User Six</option>
-                    </select>
-                </div>
             
-                <form class="form-vertical" >
-                        <fieldset>
+            <form class="form-vertical">
+                <!-- Form Name -->
+                <legend>Lista de Roles</legend>
+                <!-- Multiple Checkboxes (inline) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="chkbListaroles"></label>
+                    <div class="col-md-4">
+                        <label class="checkbox-inline" for="chkbListaroles-0">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-0" value="1">
+                            Administrador<br>
+                        </label>
+                        <label class="checkbox-inline" for="chkbListaroles-1">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-1" value="2">
+                            Seguridad<br>
+                        </label>
+                        <label class="checkbox-inline" for="chkbListaroles-2">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-2" value="3">
+                            Mantenimiento<br>
+                        </label>
+                        <label class="checkbox-inline" for="chkbListaroles-3">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-3" value="4">
+                            Consultas<br>
+                        </label>
+                        <label class="checkbox-inline" for="chkbListaroles-4">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-4" value="3">
+                            5<br>
+                        </label>
+                        <label class="checkbox-inline" for="chkbListaroles-5">
+                            <input type="checkbox" name="chkbListaroles" id="chkbListaroles-5" value="4">
+                            6<br>
+                        </label>
                         
-                        <!-- Form Name -->
-                        <legend>Lista de Roles</legend>
-                        
-                        <!-- Multiple Checkboxes (inline) -->
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="chkbListaroles"></label>
-                          <div class="col-md-4">
-                            <label class="checkbox-inline" for="chkbListaroles-0">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-0" value="1">
-                              1
-                            </label>
-                            <label class="checkbox-inline" for="chkbListaroles-1">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-1" value="2">
-                              2
-                            </label>
-                            <label class="checkbox-inline" for="chkbListaroles-2">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-2" value="3">
-                              3
-                            </label>
-                            <label class="checkbox-inline" for="chkbListaroles-3">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-3" value="4">
-                              4
-                            </label>
-                            <label class="checkbox-inline" for="chkbListaroles-4">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-4" value="3">
-                              3
-                            </label>
-                            <label class="checkbox-inline" for="chkbListaroles-5">
-                              <input type="checkbox" name="chkbListaroles" id="chkbListaroles-5" value="4">
-                              4
-                            </label>
-                          </div>
+                        <!-- Button Iniciar Sesión-->
+                        <div class="vu-btn">
+                            <button id="verUsuarios" name="verUsuarios" type="submit">Actualizar Roles</button>
                         </div>
-                        
-                        </fieldset>
-                        </form>
-            </form>
-        </main>
+                    </div><!--Fin col-md-4up-->
+                </div><!--Fin form-group-->
+                </form><!--Fin form-vertical-->
+        </form><!--Fin verUsuario-frm-->
+    </section><!--Fin areaTrabajo-->
 </body>
 </html>

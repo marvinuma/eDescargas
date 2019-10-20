@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eDescargas | Información del Consecutivo</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/estilosMain.css">
+    <link rel="stylesheet" href="../css/estilosForms.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>e-Descargas</h1>
+    </header>
+    
+        <!--imagen-->
+        <section class="imagen">
+            <img src="../img/image.png">
+        </section>
+    
+        <!--Bienvenido - Control Login Name / Status-->
+        <aside class="right">
+            <div>
+                <h1>Bienvenido:</h1>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </aside>
+    
+        <!--Usted esta en - Control SiteMapPath-->
+        <nav>
+            <ul>
+                <h1>Usted esta en:</h1>
+            </ul>
+        </nav>
+    
+        <!--Main Menu-->
+        <aside class="left">
+            <div>
+                <ol>
+                    <li><h4><a href="../html/main.html">Inicio</a></h4>
+                        <ul>
+                            <li><h4>Seguridad</h4>
+                                <ul>
+                                    <li><h4>Usuarios</h4>
+                                        <ul>
+                                            <li><h4><a href="../html/uCrearUsuario.html">Crear Usuario</a></h4></li>
+                                            <li><h4><a href="../html/uVerUsuarios.html">Ver Usuarios</a></h4></li>
+                                        </ul>
+                                    </li>
+                                    <li><h4><a href="../html/uCambioContrasena.html">Cambiar Contraseña</a></h4></li>
+                                </ul>
+                            </li>
+                            <li><h4>Administración</h4>
+                                <ul>
+                                    <li><h4><a href="../html/aConsecutivo.html">Consecutivos</a></h4></li>
+                                    <li><h4><a href="#">Tarifas</a></h4></li>
+                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                                </ul>
+                            </li>
+                            <li><h4>Consultas</h4>
+                                <ul>
+                                    <li><h4><a href="#">Productos y Servicios</a></h4></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+    
+        <!--Area de trabajo-->
+        <section class="areaTrabajo">
+            <!-- Form Name -->
+            <form class="Consecutivos-frm">
+                <div class="ListarConsecutivos-frm">
+                    <h2>Información del Consecutivo</h2>
+                    <!-- Select Producto -->
+                    <div class="ce-frm">
+                        <label class="" for="selectProducto">Descripción:</label>
+                        <select id="selectProducto" name="selectProducto" class="">
+                            <option value="1">Películas</option>
+                            <option value="2">Música</option>
+                            <option value="3">Libros</option>
+                        </select>
+                    </div>
+                        
+                    <!-- Text Consecutivo-->
+                    <div class="ce-frm">
+                        <label class="" for="textConsecutivo">Consecutivo:</label>  
+                        <input id="textConsecutivo" name="textConsecutivo" type="text" placeholder="" class="" required="">
+                    </div>
+                        
+                    <!-- Multiple Checkboxes Posee Prefijo -->
+                    <div class="ce-frm">
+                        <label class="" for="checkboxPrefijo">Posee Prefijo:</label>
+                        <!--<div class="checkboxPosee">-->
+                            <label class="" for="checkboxPrefijo-0">
+                                <input type="checkbox" name="checkboxPrefijo" id="checkboxPrefijo-0" value="1">
+                                Sí
+                            </label>
+                        <!--</div>-->
+                    </div>
+                        
+                    <!-- Text Prefijo-->
+                    <div class="ce-frm">
+                        <label class="" for="textPrefijo">Prefijo:</label>  
+                        <input id="textPrefijo" name="textPrefijo" type="text" placeholder="" class="" required="">
+                    </div>
+                        
+                    <!-- Multiple Checkboxes Posee Rango -->
+                    <div class="ce-frm">
+                        <label class="" for="checkboxRango">Posee Rango:</label>
+                        <!--<div class="checkboxPosee">-->
+                            <label class="" for="checkboxRango-0">
+                                <input type="checkbox" name="checkboxRango" id="checkboxRango-0" value="1">
+                                Sí
+                            </label>
+                        <!--</div>-->
+                    </div>
+                        
+                    <!-- Text Rango Inicial-->
+                    <div class="ce-frm">
+                        <label class="" for="txtRangoInicial">Rango Inicial:</label>  
+                        <input id="txtRangoInicial" name="txtRangoInicial" type="text" placeholder="" class="" required="">
+                    </div>
+                        
+                    <!-- Text Rango Final-->
+                    <div class="ce-frm">
+                        <label class="" for="txtRangoFinal">Rango Final:</label>  
+                        <input id="txtRangoFinal" name="txtRangoFinal" type="text" placeholder="" class="" required="">
+                    </div>
+      
+                    <!-- Button Nuevo Aceptar y Cancelar-->
+                    <div class="ce-btn">
+                        <button id="btnAceptar" name="btnAceptar" type="submit">Aceptar</button>
+                        <button id="btnCancelar" name="btnCancelar" type="submit">Cancelar</button>
+                    </div>
+                </div><!--ListarConsecutivos-frm-->
+            </form><!--Fin de Consecutivos-frm-->
+        </section><!--Fin de areaTrabajo-->
+</body>
+</html>

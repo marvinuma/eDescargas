@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>eDescargas | Crear Cuentas</title>
+    <title>eDescargas | Cambio de Clave</title>
     <!--Estilos-->
     <link rel="stylesheet" href="../css/estilosMain.css">
     <link rel="stylesheet" href="../css/estilosForms.css">
@@ -14,7 +14,7 @@
     <header>
         <h1>e-Descargas</h1>
     </header>
-    
+
     <!--imagen-->
     <section class="imagen">
         <img src="../img/image.png">
@@ -41,7 +41,7 @@
             <ol>
                 <li><h4><a href="../html/main.html">Inicio</a></h4>
                     <ul>
-                        <li><h4>Seguridad</h4>
+                         <li><h4>Seguridad</h4>
                             <ul>
                                 <li><h4>Usuarios</h4>
                                     <ul>
@@ -73,52 +73,36 @@
     <!--Area de trabajo-->
     <section class="areaTrabajo">
         <!-- Form Name -->
-        <form class="Usuario-frm">
-            <div class="CrearUsuario-frm">
-                <h2>Usuarios</h2>
-                <h3>Crear nueva cuenta</h3>
-                <!-- Text input Usuario-->
-                <div class="cu-frm">
-                    <label class="" for="txtUsuario">Usuario:</label>  
-                    <input id="txtUsuario" name="txtUsuario" type="text" placeholder="" class="" required="">
-                </div>
-
+        <form class="CambioClave-frm">
+            <h2>Cambiar Contraseña</h2>
+            <h3>Cambio de Contraseña</h3>
                 <!-- Text input Contraseña-->
-                <div class="cu-frm">
+                <div class="cc-frm">
                     <label class="" for="txtContrasena">Contraseña:</label>  
                     <input id="txtContrasena" name="txtContrasena" type="text" placeholder="" class="" required="">
                 </div>
-
+                        
+                <!-- Text input Nueva Contraseña-->
+                <div class="cc-frm">
+                    <label class="" for="txtNuevaContrasena">Nueva Contraseña:</label>  
+                    <input id="txtNuevaContrasena" name="txtNuevaContrasena" type="text" placeholder="" class="" required="">
+                </div>
+                    
                 <!-- Text input Confirmar Contraseña-->
-                <div class="cu-frm">
+                <div class="cc-frm">
                     <label class="" for="txtConfContrasena">Confirmar Contraseña:</label>  
                     <input id="txtConfContrasena" name="txtConfContrasena" type="text" placeholder="" class="" required="">
                 </div>
-
-                <!-- Text input Email-->
-                <div class="cu-frm">
-                    <label class="" for="txtEmail">Email:</label>  
-                    <input id="txtEmail" name="txtEmail" type="email" placeholder="" class="" required="">
+                        
+                <!-- Button Canbiar Contraseña y Cancelar -->
+                <div class="cc-frm">
+                    <label class="" for="button1id"></label>
+                    <div class="col-md-8">
+                        <button id="btnCambiarClave" name="btnCambiarClave" type="submit">Cambiar Contraseña</button>
+                        <button id="btnCancelar" name="btnCancelar" type="submit">Cancelar</button>
+                    </div>
                 </div>
-
-                <!-- Text input Pregunta de Seguridad-->
-                <div class="cu-frm">
-                    <label class="" for="txtPregSeguridad">Pregunta de Seguridad:</label>  
-                    <input id="txtPregSeguridad" name="txtPregSeguridad" type="text" placeholder="" class="" required="">
-                </div>
-
-                <!-- Text input Respuesta de Seguridad-->
-                <div class="cu-frm">
-                    <label class="" for="txtRespSeguridad">Respuesta de Seguridad:</label>  
-                    <input id="txtRespSeguridad" name="txtRespSeguridad" type="text" placeholder="" class="" required="">
-                </div>
-
-                <!-- Button Crear Usuario-->
-                <div class="cu-btn">
-                    <button id="btnCrearUsuario" name="btnCrearUsuario" type="submit">Crear Usuario</button>
-                </div>
-            </div><!--Fin CrearUsuario-frm-->
-        </form><!--Fin Usuario-frm-->
-    </section>
+            </form><!--Fin CambioClave-frm-->   
+        </section><!--Fin areaTrabajo-->
 </body>
 </html>
